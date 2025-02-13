@@ -24,10 +24,10 @@ This project aims to develop a computer vision model capable of identifying and 
 
 ```sh
 # Clone the repository
-git clone <repository-url>
+git clone https://github.com/khush9651/ComputerVisionforOutfitMatching-StyledGenie.git
 
 # Navigate to the project folder
-cd computer-vision-outfit-matching
+cd ComputerVisionforOutfitMatching-StyledGenie
 
 # Install dependencies
 pip install -r requirements.txt

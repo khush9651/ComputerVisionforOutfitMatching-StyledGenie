@@ -11,6 +11,8 @@ This project aims to develop a computer vision model capable of identifying and 
 - **Deep Learning Implementation:** Uses CNNs for accurate image classification.
 - **Fashion Image Processing:** Utilizes OpenCV and TensorFlow/PyTorch for image analysis.
 - **Report Generation:** Provides a summary of model accuracy and findings.
+- **Real-Time Outfit Matching:** Supports real-time recommendations based on uploaded images.
+- **Dataset Augmentation:** Uses data augmentation techniques to improve model accuracy.
 
 ## Technologies Used
 
@@ -19,6 +21,7 @@ This project aims to develop a computer vision model capable of identifying and 
 - TensorFlow / PyTorch
 - Deep Learning (Convolutional Neural Networks)
 - NumPy, Pandas, Matplotlib
+- Flask (for building a web-based UI, optional)
 
 ## Installation & Usage
 
@@ -37,24 +40,43 @@ python train_model.py
 
 # Use the model to predict outfit matches
 python outfit_match.py --image <image-path>
+
+# (Optional) Run the web interface
+python app.py
 ```
 
 ## Folder Structure
 
 ```
-computer-vision-outfit-matching/
+ComputerVisionforOutfitMatching-StyledGenie/
 │── dataset/             # Fashion image dataset
 │── models/              # Trained models
 │── scripts/
 │   ├── train_model.py   # Model training script
 │   ├── outfit_match.py  # Outfit matching script
 │── reports/             # Summary and findings
+│── web_app/             # Web-based interface (optional)
 │── requirements.txt     # Required dependencies
+│── app.py               # Flask web application
 ```
+
+## How It Works
+
+1. **Image Upload:** Users upload images of clothing items.
+2. **Classification:** The model categorizes the clothing items into predefined classes.
+3. **Color Harmony Check:** The system identifies compatible color schemes.
+4. **Outfit Suggestion:** The AI suggests matching outfits based on detected categories and colors.
+5. **Report Generation:** Model performance and accuracy details are documented.
 
 ## Contributions
 
 Contributions are welcome! Fork the repository and submit pull requests to improve the project.
+
+## Future Enhancements
+
+- Implement a mobile application.
+- Integrate with e-commerce platforms for outfit recommendations.
+- Improve color-matching algorithms with advanced AI techniques.
 
 ## License
 
